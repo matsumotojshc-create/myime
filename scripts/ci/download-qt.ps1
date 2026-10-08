@@ -25,7 +25,7 @@ New-Item -ItemType Directory -Force -Path $OutputDir | Out-Null
 
 # Build URL
 $majorMinor = $Version -replace '\.\d+$', ''
-$url = "https://download.qt.io/official_releases/qt/$majorMinor/$Version/submodules/$fileName"
+$url = "https://download.qt.io/archive/qt/$majorMinor/$Version/submodules/$fileName"
 
 Write-Host "Downloading Qt $Version from:"
 Write-Host "  $url"
